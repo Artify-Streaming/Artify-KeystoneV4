@@ -6,7 +6,6 @@
     ]
   ],
   "_from": "keystone@4.2.1",
-  "_id": "keystone@4.2.1",
   "_inBundle": false,
   "_integrity": "sha512-rdhCuTR/wbsSnsdZZgBJi/3MOWDPll3BzvUFWxbjSo904+OO+8soaTPF1ikLkxjGpzh/EbDqM0ARTaE0vQBYUA==",
   "_location": "/keystone",
@@ -264,5 +263,5 @@
     "test-unit": "node test/pretest.js && mocha",
     "watch": "watch 'clear && npm run lint' lib admin server test"
   },
-  "version": "4.2.2"
+  "version": "4.2.3"
 }
