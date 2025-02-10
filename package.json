@@ -153,7 +153,7 @@
     "method-override": "^3.0.0",
     "mime-types": "^2.1.24",
     "moment": "^2.24.0",
-    "mongoose": "^4.13.14",
+    "mongoose": "^5.13.23",
     "morgan": "^1.9.1",
     "multer": "^1.4.1",
     "numeral": "^2.0.6",
@@ -237,10 +237,10 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "keystone",
+  "name": "keystone-v4-mongodb6",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keystonejs/keystone.git"
+    "url": "git+https://github.com/Artify-Streaming/KeystoneV4-MongoDB6.git"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production node build.js | uglifyjs -mc -b beautify=false,semicolons=true > ./admin/public/js/packages.js",
@@ -264,5 +264,5 @@
     "test-unit": "node test/pretest.js && mocha",
     "watch": "watch 'clear && npm run lint' lib admin server test"
   },
-  "version": "4.2.1"
+  "version": "4.2.2"
 }
