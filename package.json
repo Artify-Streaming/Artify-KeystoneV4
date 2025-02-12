@@ -263,5 +263,5 @@
     "test-unit": "node test/pretest.js && mocha",
     "watch": "watch 'clear && npm run lint' lib admin server test"
   },
-  "version": "4.2.5"
+  "version": "4.2.6"
 }
