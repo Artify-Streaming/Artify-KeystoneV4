@@ -105,8 +105,15 @@ Keystone.prototype.prefixModel = function (key) {
 	if (modelPrefix) {
 		key = modelPrefix + '_' + key;
 	}
-
-	return require('mongoose/lib/utils').toCollectionName(key);
+	var convertedKey = key.toLowerCase();
+	if (convertedKey !== 'media' && convertedKey !== 'payment_log2' && convertedKey !== 'sobflous') {
+		var lastChar = convertedKey.substr(-1);
+		if (lastChar === 's') convertedKey = convertedKey + 'es';
+		else if (lastChar === 'y') convertedKey = convertedKey.substr(0, convertedKey.length - 1) + 'ies';
+		else convertedKey = convertedKey + 's';
+	}
+	console.log('Model:', key, convertedKey);
+	return require('mongoose/lib/utils').toCollectionName(convertedKey);
 };
 
 /* Attach core functionality to Keystone.prototype */
