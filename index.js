@@ -112,7 +112,7 @@ Keystone.prototype.prefixModel = function (key) {
 		else if (lastChar === 'y') convertedKey = convertedKey.substr(0, convertedKey.length - 1) + 'ies';
 		else convertedKey = convertedKey + 's';
 	}
-	console.log('Model:', key, convertedKey);
+	// console.log('Model:', key, convertedKey);
 	return require('mongoose/lib/utils').toCollectionName(convertedKey);
 };
 
